@@ -47,11 +47,12 @@ for (let i = 0 ; i < card.length ; i++){
     const graphic = `
     <div class="team-card">
         <div class="card-image">
-        <img src="img/wayne-barnett-founder-ceo.jpg" alt="Wayne Barnett" />
+        <img src="${card[i].proPic}" alt="Wayne Barnett" />
         </div>
         <div class="card-text">
         <h3>${card[i].id}</h3>
         <p>${card[i].role}</p>
     </div>
     `
+    container.innerHTML += graphic
 }

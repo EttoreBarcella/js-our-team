@@ -37,3 +37,21 @@ const card = [
         proPic : "img/walter-gordon-office-manager.jpg",
     },
 ]
+// Seleziono il container dal foglio HTML
+const container = document.querySelector(".team-container")
+
+// Creo ciclo for che attraversa l'oggetto card
+
+for (let i = 0 ; i < card.length ; i++){
+    // prendo la parte di codice html che devo modificare 
+    const graphic = `
+    <div class="team-card">
+        <div class="card-image">
+        <img src="img/wayne-barnett-founder-ceo.jpg" alt="Wayne Barnett" />
+        </div>
+        <div class="card-text">
+        <h3>${card[i].id}</h3>
+        <p>${card[i].role}</p>
+    </div>
+    `
+}
